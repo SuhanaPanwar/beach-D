@@ -7,12 +7,13 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     vec2 uv = fragCoord / iResolution.xy;
 
     vec3 color1 = vec3(0.6, 0.8, 0.8);
-    vec3 color2 = vec3(0.1, 0.3, 0.4);
+    vec3 color2 = vec3(0.2, 0.3, 0.4);
 
     vec3 tgth = mix(color1, color2, uv.y);
     vec3 sand = vec3(0.9, 0.7, 0.5);
+    
     float wave = sin(uv.x * 12.0 + iTime * 1.7) * 0.02;
-    float shore = step(0.4 + wave, uv.y);
+    float shore = step(0.31 + wave, uv.y);
 
     tgth = mix(sand, tgth, shore);
     fragColor = vec4(tgth, 1.0);
