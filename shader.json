@@ -2,7 +2,7 @@
   "ver": "0.1",
   "info": {
     "id": "",
-    "name": "My first shader :D",
+    "name": "beach :D",
     "description": "",
     "tags": []
   },
@@ -15,7 +15,7 @@
           "channel": 0
         }
       ],
-      "code": "// Welcome! This is a Shadertoy-style shader.\n// mainImage runs once for each pixel, every frame.\n// Try changing a number, then watch the preview on the right.\n\nvoid mainImage( out vec4 fragColor, in vec2 fragCoord )\n{\n    vec2 uv = fragCoord / iResolution.xy;\n\n    vec3 shallow = vec3(0.65, 0.88, );\n}\n",
+      "code": "// Welcome! This is a Shadertoy-style shader.\n// mainImage runs once for each pixel, every frame.\n// Try changing a number, then watch the preview on the right.\n\nvoid mainImage( out vec4 fragColor, in vec2 fragCoord )\n{\n    vec2 uv = fragCoord / iResolution.xy;\n\n    vec3 shallow = vec3(0.65, 0.88, 0.82);\n    vec4\n}\n",
       "name": "Image",
       "description": "",
       "type": "image"

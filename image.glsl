@@ -6,5 +6,6 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 {
     vec2 uv = fragCoord / iResolution.xy;
 
-    vec3 shallow = vec3(0.65, 0.88, );
+    vec3 shallow = vec3(0.65, 0.88, 0.82);
+    vec4
 }
