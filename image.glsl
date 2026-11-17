@@ -10,5 +10,9 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     vec3 color2 = vec3(0.1, 0.3, 0.4);
 
     vec3 tgth = mix(color1, color2, uv.y);
+    vec3 sand = vec3(0.9, 0.75, 0.58);
+    shore = step(0.45, uv.y)
+    evb = 
+
     fragColor = vec4(tgth, 1.0);
 }
