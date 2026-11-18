@@ -16,6 +16,8 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     float ripples = ripple1 * ripple2;
     tgth += ripples * 0.06;
 
+    
+
     vec3 sand = vec3(0.9, 0.7, 0.5);
 
     float wave = sin(uv.x * 12.0 + iTime * 1.2) * 0.02;
