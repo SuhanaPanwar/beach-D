@@ -10,6 +10,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     vec3 color2 = vec3(0.2, 0.3, 0.4);
 
     vec3 tgth = mix(color1, color2, uv.y);
+
     vec3 sand = vec3(0.9, 0.7, 0.5);
 
     float wave = sin(uv.x * 12.0 + iTime * 1.2) * 0.02;
