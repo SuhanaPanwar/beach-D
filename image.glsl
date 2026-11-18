@@ -16,10 +16,10 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     float ripples = ripple1 * ripple2;
     tgth += ripples * 0.06;
 
-    vec2 p = uv * 27.0;
+    vec2 p = uv * 25.0;
     float pattern = sin(p.x + sin(p.y + iTime)) * sin(p.y * sin(p.x - iTime));
 
-    float whiteshinystuff = smoothstep(0.4, 0.9, pattern);
+    float whiteshinystuff = smoothstep(0.2, 0.9, pattern);
     tgth = mix(tgth, vec3(0.9, 0.9, 0.9), whiteshinystuff * 0.2);
 
     vec3 sand = vec3(0.9, 0.7, 0.5);
