@@ -12,7 +12,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     vec3 tgth = mix(color1, color2, uv.y);
     vec3 sand = vec3(0.9, 0.7, 0.5);
 
-    float wave = sin(uv.x * 12.0 + iTime * 1.7) * 0.02;
+    float wave = sin(uv.x * 12.0 + iTime * 1.2) * 0.02;
     float tide = sin(iTime * 0.8) * 0.045;
     float edge = 0.31 + wave + tide;
     float shore = step(edge, uv.y);
