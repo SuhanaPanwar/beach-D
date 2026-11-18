@@ -17,10 +17,11 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     float edge = 0.31 + wave + tide;
     float shore = step(edge, uv.y);
 
-    float foam = 1.0 - smoothstep(0.0, 0.015, uv.y - edge);
+    float foam = 1.0 - smoothstep(0.0, 0.15, uv.y - edge);
     foam *= shore;
-    vec3 foamColor = vec3(0.95, 0.98, 0.95);
+    vec3 foamColor = vec3(0.9, 0.9, 0.9);
 
     tgth = mix(sand, tgth, shore);
+    tgth = mix(tgth, foamColor, foam);
     fragColor = vec4(tgth, 1.0);
 }
