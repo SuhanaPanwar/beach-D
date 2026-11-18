@@ -10,8 +10,10 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     vec3 color2 = vec3(0.2, 0.3, 0.4);
 
     vec3 tgth = mix(color1, color2, uv.y);
-    float ripple = sin(uv.y * 0.4 + iTime * 1.0);
-    tgth += ripple * 0.1;
+
+    float ripple1 = sin(uv.y * 35.0 + iTime * 1.0);
+    float ripple2 = sin(uv.x * 18.0 + uv.y * 25.0 - iTime * 0.7);
+
     vec3 sand = vec3(0.9, 0.7, 0.5);
 
     float wave = sin(uv.x * 12.0 + iTime * 1.2) * 0.02;
